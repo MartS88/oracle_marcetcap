@@ -1,0 +1,44 @@
+.dots_popup {
+  margin: 0 auto;
+  width: 250px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: white;
+  padding: 20px 35px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.dots_popup .close {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.dots_popup .close svg {
+  transform: translate(250%, 0%);
+  cursor: pointer;
+}
+.dots_popup div .edit {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-family: "Roboto";
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+.dots_popup .remove {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-family: "Roboto";
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+.dots_popup .remove svg {
+  color: red;
+}
+
+/*# sourceMappingURL=DotsPopUp.module.css.map */

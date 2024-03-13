@@ -1,0 +1,151 @@
+.create_popup {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 400px;
+  height: 100%;
+  max-height: 330px;
+  background-color: whitesmoke;
+  padding: 10px 13px;
+  box-shadow: silver 0px 1px 12px, silver 0px 1px 2px;
+  transition: box-shadow 150ms ease-in 0s;
+}
+.create_popup .create_popup_block {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.create_popup .create_popup_block h2 {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 1rem;
+}
+.create_popup .create_popup_block svg {
+  cursor: pointer;
+}
+.create_popup .avatar_block {
+  margin-bottom: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.create_popup .avatar_block div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.create_popup .avatar_block div p {
+  margin-bottom: 5px;
+  font-family: "Roboto";
+  font-size: 1rem;
+  font-weight: 500;
+}
+.create_popup .avatar_block div div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  background: silver;
+  border-radius: 35px;
+}
+.create_popup .avatar_block div div svg {
+  width: 50px;
+  height: 50px;
+}
+.create_popup .floor_block {
+  width: 100%;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.create_popup .floor_block label {
+  font-family: "Roboto";
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+.create_popup .floor_block input {
+  margin-top: 5px;
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 4px;
+  background: white;
+  border: 1px solid #80b5ef;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 1s ease;
+}
+.create_popup .floor_block input::placeholder {
+  padding-left: 5px;
+  transition: all 0.5s ease;
+}
+.create_popup .floor_block input:hover {
+  border: 1px solid #80b5ef;
+}
+.create_popup .floor_block input:focus {
+  outline: none;
+  background: white;
+  border: 1px solid #80b5ef;
+}
+.create_popup .floor_block input:focus::placeholder {
+  font-size: 0.72rem;
+  transform: translateY(-15px);
+}
+.create_popup .floor_block span {
+  color: gray;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+.create_popup .change {
+  background: rgb(56, 97, 251);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  padding: 5px 5px;
+  color: rgb(255, 255, 255);
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+.create_popup .change:hover {
+  background: rgb(56, 134, 251);
+}
+.create_popup button {
+  margin-bottom: 10px;
+  background: rgb(56, 97, 251);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  padding: 5px 5px;
+  color: rgb(255, 255, 255);
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 0.8rem;
+  border: none;
+}
+.create_popup button:hover {
+  background: rgb(56, 134, 251);
+}
+
+@media (max-width: 700px) {
+  .create_popup {
+    margin: 0 auto;
+    width: 350px;
+  }
+}
+
+/*# sourceMappingURL=CreatePopUp.module.css.map */

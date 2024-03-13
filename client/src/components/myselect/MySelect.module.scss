@@ -1,0 +1,143 @@
+.my_select {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 50px;
+
+  .select_blocks {
+    display: flex;
+    gap: 50px;
+
+
+    .select_block {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 5px;
+    }
+
+    label {
+      font-size: 1rem;
+      color: gray;
+      font-weight: 500;
+
+    }
+  }
+
+  .wallet {
+    background: whitesmoke;
+    width: 400px;
+    height: 42px;
+    padding: 12px;
+    font-size: 1rem;
+    color: rgb(34, 37, 49);
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+
+    &::placeholder {
+      font-family: 'Roboto';
+      color: grey;
+      font-size: 0.8rem;
+      font-weight: 500;
+      padding-left: 5px;
+      transition: all 0.5s ease;
+    }
+
+
+    &:hover {
+      background: whitesmoke;
+    }
+
+    &:focus {
+      background: whitesmoke;
+      outline: none;
+
+
+      &::placeholder {
+        font-size: 0.6rem;
+        transform: translateY(-10px);
+      }
+    }
+  }
+
+  .wallet_list {
+    padding-top: 15px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+
+
+    .wallet_div {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 5px;
+
+      .wallet_description_block {
+        display: flex;
+        align-items: baseline;
+        gap: 10px;
+
+        .wallet_description {
+          font-size: 1rem;
+          color: gray;
+          font-weight: 500;
+        }
+
+        .wallet_description_about {
+          font-family: 'Roboto';
+          color: red;
+          font-weight: 400;;
+        }
+      }
+    }
+
+    li {
+      display: flex;
+      gap: 20px;
+      justify-content: flex-start;
+      align-items: baseline;
+
+      .wallet_chain, {
+        font-size: 1rem;
+        color: gray;
+        font-weight: 500;
+      }
+
+      .wallet_amount {
+        font-size: 1rem;
+        font-family: 'Roboto';
+        font-weight: 500;
+      }
+    }
+
+  }
+
+  .select_block2 {
+
+    .select_block2_title {
+      font-size: 1rem;
+      color: gray;
+      font-weight: 400;
+      font-family: 'Roboto';
+    }
+
+    .select_block2_title2 {
+      font-family: 'Roboto';
+      font-weight: 500;
+    }
+  }
+
+  .wallet_empty_wallet {
+    margin-left: 20px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
+  }
+}
+

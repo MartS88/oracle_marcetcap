@@ -1,0 +1,63 @@
+.exchanges {
+  margin: 0 auto;
+  min-height: 100vh;
+
+  .title {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+
+    h2 {
+      font-family: 'Prompt';
+      font-weight: 400;
+      cursor: pointer;
+      font-size: 1.5rem;
+      line-height: 28px;
+      cursor: auto;
+      margin-bottom: 10px;
+    }
+    span {
+      width: 100%;
+      font-size: 1rem;
+      font-family: "Roboto";
+      line-height: 1.43;
+      color: #58667e;
+
+    }
+  }
+
+}
+
+
+
+
+
+@media (max-width: 1240px) {
+  .title {
+    padding-left: 50px;
+  }
+}
+
+
+
+
+@media screen and (max-width: 700px) {
+  .exchanges {
+
+
+
+      .title {
+
+        margin-top: 20px;
+        padding-left: 30px;
+
+        h2 {
+          font-size: 1.1rem!important;
+        }
+      }
+
+
+  }
+}

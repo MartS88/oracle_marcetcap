@@ -1,0 +1,186 @@
+
+.add_coin {
+  transform: translateY(50%);
+  margin: 0 auto;
+  width: 400px;
+  height: 450px;
+  background-color: white;
+  padding: 5px 7px;
+  box-shadow: silver 0px 1px 12px, silver 0px 1px 2px;
+  transition: box-shadow 150ms ease-in 0s;
+  overflow: auto;
+  border-radius: 15px;
+
+  &::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+  }
+
+  .select1 {
+    width: 100%;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    .select2 {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+
+      button {
+        margin-bottom: 5px;
+        width: 100%;
+        background: rgb(56, 97, 251);
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        cursor: pointer;
+        padding: 6px 6px;
+        border: none;
+        color: white;
+        font-family: 'Roboto';
+        transition: all .1s ease;
+        &:hover {
+          background: rgb(56, 134, 251);
+        }
+      }
+      .disabled {
+          cursor: wait;
+          background: rgb(56, 134, 251);
+
+      }
+
+      .select_block {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        h2 {
+          margin-bottom: 10px!important;
+          font-size: 1.3rem;
+          font-family: 'Roboto';
+          font-weight: 500;
+        }
+
+        svg {
+          cursor: pointer;
+          color: black;
+          width: 30px;
+          height: 30px;
+
+        }
+      }
+
+      input {
+
+        width: 100%;
+        margin-bottom: 10px;
+        background: white;
+        height: 42px;
+        padding: 12px;
+        border: 1px solid #80b5ef;
+        border-radius: 8px;
+        font-size: 1rem;
+        color: black;
+        cursor: pointer;
+
+
+        &::placeholder {
+          font-family: 'Roboto';
+          color: grey;
+          font-size: 0.8rem;
+          font-weight: 500;
+          padding-left: 5px;
+          transition: all 0.5s ease;
+        }
+
+        &:hover {
+
+        }
+
+        &:focus {
+          color: black;
+          font-weight: 500;
+          outline: none;
+
+
+          &::placeholder {
+            font-size: 0.6rem;
+            transform: translateY(-10px);
+          }
+        }
+      }
+    }
+
+    ul {
+
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 5px;
+
+
+      li {
+
+        padding: 5px 7px;
+        height: 40px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        font-size: 1rem;
+        font-weight: 400;
+        font-family: 'Roboto';
+        transition: all 0.1s ease;
+
+        &:hover {
+          background: #F8FAFD;
+          cursor: pointer;
+          //background: #FCFDFE;
+
+        }
+
+        img {
+          width: 30px;
+          height: 30px;
+        }
+
+        span {
+          color: gray;
+          font-size: 0.8rem;
+        }
+
+        svg {
+          color: gray;
+          width: 20px;
+          height: 20px;
+          margin-left: auto !important;
+        }
+
+      }
+    }
+  }
+
+}
+
+
+
+@media (max-width: 700px) {
+  .add_coin {
+
+
+    margin: 0 auto;
+    width: 300px;
+    }
+
+
+
+}

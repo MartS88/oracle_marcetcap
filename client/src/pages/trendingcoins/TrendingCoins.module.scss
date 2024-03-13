@@ -1,0 +1,66 @@
+.trending {
+  min-height: 100vh;
+  padding: 0px ;
+  margin: 0 auto;
+
+
+  .trending_block {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    gap: 5px;
+
+    svg {
+      width: 30px;
+      height: 30px;
+    }
+
+    h2 {
+      font-family: "Prompt";
+      font-weight: 400;
+      font-size: 1.5rem;
+      line-height: 28px;
+      cursor: auto;
+      color: rgb(34, 37, 49);
+    }
+  }
+  p {
+    padding-top: 10px;
+    width: 100%;
+    font-size: 1rem;
+    font-family: "Roboto";
+    line-height: 1.43;
+    color: #58667e;
+    margin-bottom: 20px;
+
+
+    span {
+      margin-left: 2px;
+      margin-right: 2px;
+      font-weight: 500;
+    }
+  }
+
+  div {
+    max-width: 1500px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .trending_table {
+    margin: 20px!important;
+    min-height: 10vh;
+
+
+    .trending_block {
+      margin-bottom: 10px;
+      padding-top: 5px;
+
+      h2 {
+        font-size: 1rem!important;
+        font-weight: 500;
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.contract_popup {
+  background: black;
+  margin-left: 50px;
+  width: 80px;
+  height: 25px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  span {
+    padding: 1px 12px;
+    font-size: 1rem;
+    color: white;
+    font-family: 'Roboto';
+  }
+}

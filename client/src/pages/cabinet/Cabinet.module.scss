@@ -1,0 +1,147 @@
+$updated-background: #e6f0ff !important;
+$updated-color: #113767 !important;
+$error-background: #fc6f7f !important;
+$error-color: black !important;
+
+
+.cabinet {
+  margin: 0 auto;
+  min-height: 100vh;
+
+  .title {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+
+    h2 {
+      font-family: 'Prompt';
+      font-weight: 400;
+      cursor: pointer;
+      font-size: 1.5rem;
+      line-height: 28px;
+      cursor: auto;
+    }
+
+    span {
+      font-size: 1rem;
+      color: #58667e;
+    }
+
+    .logout_button {
+      font-family: 'Roboto';
+      font-size: 1rem;
+      padding: 7px;
+      border-radius: 10%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: whitesmoke;
+      cursor: pointer;
+      transition: all .1s ease;
+      border: none;
+
+
+      &:hover {
+        background: #e6f0ff;
+
+      }
+    }
+  }
+
+  .account_block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+
+    .error_title {
+      color: red;
+      font-size: 0.9rem;
+      font-family: 'Roboto';
+
+    }
+    .update_span{
+
+    }
+    .update_block {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 50px;
+
+      input {
+        width: 200px;
+        height: auto;
+        padding: 5px;
+        background: #ffff;
+        border: 1px solid #113767;
+        border-radius: 8px;
+        font-size: 1rem;
+        font-weight: 400;
+        font-family: 'Roboto';
+        position: relative;
+
+
+        &::placeholder {
+          padding-left: 5px;
+          transition: all 0.5s ease;
+        }
+
+        &:hover {
+          background: whitesmoke;
+          border: 1px solid #113767;
+
+        }
+
+        &:focus {
+          outline: none;
+          background: white;
+          border: 1px solid #113767;
+
+
+          &::placeholder {
+            font-size: 0.72rem;
+            transform: translateY(-7px);
+          }
+        }
+      }
+
+      .update_button {
+        width: auto;
+        font-family: 'Roboto';
+        font-size: 1rem;
+        padding: 7px;
+        border-radius: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: whitesmoke;
+        cursor: pointer;
+        transition: all .1s ease;
+        border: none;
+
+        &:hover {
+          background: #e6f0ff;
+        }
+      }
+      .error_title {
+        width: 100%;
+      }
+    }
+  }
+
+  .updated {
+
+    background: $updated-background;
+    color: $updated-color;
+  }
+
+  .error {
+
+    background: $error-background;
+    color: $error-color;
+  }
+
+}

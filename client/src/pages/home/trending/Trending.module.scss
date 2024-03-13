@@ -1,0 +1,224 @@
+.trending_item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 400px;
+  height: 280px;
+  box-sizing: border-box;
+  padding: 10px;
+  background-color: white;
+  border: 1px solid whitesmoke;
+  box-shadow: rgba(128, 138, 157, 0.04) 0px 8px 32px, rgba(128, 138, 157, 0.12) 0px 1px 2px;
+  transition: box-shadow 150ms ease-in 0s;
+
+
+  .trending_title {
+    margin-bottom: 5px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start !important;
+
+    h2 {
+      font-family: 'Roboto';
+      font-weight: bold;
+      font-size: 1.5rem;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    span {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 3px;
+      margin-left: auto !important;
+      padding-right: 5px;
+      font-size: 1rem;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      color: blue;
+      font-family: 'Roboto';
+      font-weight: 400;
+    }
+  }
+
+  ul {
+    padding-top: 10px;
+    width: 100%!important;
+    display: flex!important;;
+    align-items: flex-start !important;
+    flex-direction: column!important;;
+    justify-content: space-between;
+    gap: 10px !important;
+
+
+    .trending_list_item {
+      padding: 0.5px 5px !important;;
+      width: 380px !important;;
+      margin: 0 auto!important;;
+      display: flex!important;;
+      flex-direction: row !important;
+      align-items: center!important;;
+      justify-content: flex-start!important;;
+      gap: 5px !important;
+      font-family: "Roboto";
+      color: rgb(34, 37, 49);
+      font-size: 1rem;
+      font-weight: 400;
+      cursor: pointer;
+      transition: all 0.2s ease;
+
+      &:hover {
+        background: whitesmoke;
+        border-radius: 8px;
+        width: 100%;
+
+        img {
+          transition: all .2s ease;
+
+        }
+      }
+
+      img {
+        width: 20px;
+        margin: 0 !important;
+        padding: 0 !important;
+      }
+
+      span {
+        margin-left: 5px;
+        color: gray;
+      }
+
+      .price_changed {
+        margin-left: auto !important;
+
+
+      }
+
+    }
+  }
+  .positive {
+    color: green;
+  }
+
+  .negative {
+    color: red;
+  }
+}
+
+
+@media screen and (max-width: 940px) {
+  .trending_item {
+      width: 400px;
+      height: 235px;
+
+    .trending_title {
+      svg {
+        width: 20px;
+      }
+
+      h2 {
+        font-size:1rem;
+      }
+      span {
+        margin-left: auto!important;
+        font-size: 0.9rem;
+      }
+
+    }
+
+    ul {
+      .trending_list_item {
+        img {
+          width: 18px!important;
+        }
+
+        font-size: 0.8rem!important;
+
+        span {
+          font-size: 0.7rem!important;
+        }
+      }
+    }
+
+  }
+}
+@media screen and (max-width: 800px) {
+  .trending_item {
+    width: 340px;
+    height: 235px;
+
+    .trending_title {
+      svg {
+
+      }
+
+      h2 {
+
+      }
+      span {
+
+      }
+
+    }
+
+    ul {
+      .trending_list_item {
+        width: 310px!important;
+        img {
+          width: 18px!important;
+        }
+
+
+
+        span {
+
+        }
+      }
+    }
+
+  }
+}
+
+
+@media screen and (max-width: 540px) {
+  .trending_item {
+    width: 300px;
+    height: 230px;
+
+    .trending_title {
+      svg {
+        width: 15px;
+      }
+
+      h2 {
+        font-size:1rem;
+      }
+      span {
+
+        margin-left: auto!important;
+        font-size: 0.8rem;
+      }
+
+    }
+
+    ul {
+      .trending_list_item {
+        width: 280px!important;
+        img {
+          width: 18px!important;
+        }
+
+        font-size: 0.8rem!important;
+
+        span {
+
+          font-size: 0.7rem!important;
+        }
+      }
+    }
+
+  }
+}

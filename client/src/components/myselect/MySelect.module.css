@@ -1,0 +1,116 @@
+.my_select {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 50px;
+}
+.my_select .select_blocks {
+  display: flex;
+  gap: 50px;
+}
+.my_select .select_blocks .select_block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+}
+.my_select .select_blocks label {
+  font-size: 1rem;
+  color: gray;
+  font-weight: 500;
+}
+.my_select .wallet {
+  background: whitesmoke;
+  width: 400px;
+  height: 42px;
+  padding: 12px;
+  font-size: 1rem;
+  color: rgb(34, 37, 49);
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+}
+.my_select .wallet::placeholder {
+  font-family: "Roboto";
+  color: grey;
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding-left: 5px;
+  transition: all 0.5s ease;
+}
+.my_select .wallet:hover {
+  background: whitesmoke;
+}
+.my_select .wallet:focus {
+  background: whitesmoke;
+  outline: none;
+}
+.my_select .wallet:focus::placeholder {
+  font-size: 0.6rem;
+  transform: translateY(-10px);
+}
+.my_select .wallet_list {
+  padding-top: 15px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+.my_select .wallet_list .wallet_div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+}
+.my_select .wallet_list .wallet_div .wallet_description_block {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+.my_select .wallet_list .wallet_div .wallet_description_block .wallet_description {
+  font-size: 1rem;
+  color: gray;
+  font-weight: 500;
+}
+.my_select .wallet_list .wallet_div .wallet_description_block .wallet_description_about {
+  font-family: "Roboto";
+  color: red;
+  font-weight: 400;
+}
+.my_select .wallet_list li {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+.my_select .wallet_list li .wallet_chain {
+  font-size: 1rem;
+  color: gray;
+  font-weight: 500;
+}
+.my_select .wallet_list li .wallet_amount {
+  font-size: 1rem;
+  font-family: "Roboto";
+  font-weight: 500;
+}
+.my_select .select_block2 .select_block2_title {
+  font-size: 1rem;
+  color: gray;
+  font-weight: 400;
+  font-family: "Roboto";
+}
+.my_select .select_block2 .select_block2_title2 {
+  font-family: "Roboto";
+  font-weight: 500;
+}
+.my_select .wallet_empty_wallet {
+  margin-left: 20px;
+  font-family: "Roboto";
+  font-weight: 400;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+
+/*# sourceMappingURL=MySelect.module.css.map */

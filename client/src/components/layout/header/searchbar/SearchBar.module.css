@@ -1,0 +1,66 @@
+.search_bar {
+  display: flex;
+  align-items: center;
+}
+.search_bar svg {
+  transform: translateX(-30px);
+}
+.search_bar input {
+  background: whitesmoke;
+  width: 200px;
+  height: 42px;
+  padding: 12px;
+  border: 2px solid whitesmoke;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: grey;
+  cursor: pointer;
+}
+.search_bar input::placeholder {
+  font-family: "Roboto";
+  color: grey;
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding-left: 5px;
+  transition: all 0.5s ease;
+}
+.search_bar input:hover {
+  background: whitesmoke;
+}
+.search_bar input:focus {
+  background: whitesmoke;
+  outline: none;
+}
+.search_bar input:focus::placeholder {
+  font-size: 0.6rem;
+  transform: translateY(-10px);
+}
+
+@media screen and (max-width: 1325px) {
+  .search_bar input {
+    width: 150px;
+    height: 25px;
+  }
+  .search_bar input::placeholder {
+    font-size: 0.7rem;
+  }
+  .search_bar svg {
+    width: 15px;
+  }
+}
+@media screen and (max-width: 1105px) {
+  .search_bar input {
+    margin-bottom: 5px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .search_bar svg {
+    transform: translate(-20px, -1px);
+  }
+  .search_bar input {
+    border: 1px solid #80b5ef;
+    width: 150px;
+  }
+}
+
+/*# sourceMappingURL=SearchBar.module.css.map */

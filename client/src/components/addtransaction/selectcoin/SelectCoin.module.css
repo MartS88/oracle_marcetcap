@@ -1,0 +1,114 @@
+.select_coin {
+  margin: 0 auto;
+  width: 350px;
+  height: 420px;
+  background-color: whitesmoke;
+  padding: 5px 7px;
+  box-shadow: silver 0px 1px 12px, silver 0px 1px 2px;
+  transition: box-shadow 150ms ease-in 0s;
+  overflow: auto;
+}
+.select_coin::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+.select_coin .select1 {
+  width: 100%;
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.select_coin .select1 .select2 {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.select_coin .select1 .select2 .select_block {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.select_coin .select1 .select2 .select_block h2 {
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+  font-family: "Roboto";
+  font-weight: 500;
+}
+.select_coin .select1 .select2 .select_block .close {
+  cursor: pointer;
+  color: red;
+  width: 30px;
+  height: 30px;
+}
+.select_coin .select1 .select2 input {
+  width: 100%;
+  margin-bottom: 10px;
+  background: white;
+  height: 42px;
+  padding: 12px;
+  border: 1px solid #80b5ef;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: black;
+  cursor: pointer;
+}
+.select_coin .select1 .select2 input::placeholder {
+  font-family: "Roboto";
+  color: grey;
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding-left: 5px;
+  transition: all 0.5s ease;
+}
+.select_coin .select1 .select2 input:focus {
+  color: black;
+  font-weight: 500;
+  outline: none;
+}
+.select_coin .select1 .select2 input:focus::placeholder {
+  font-size: 0.6rem;
+  transform: translateY(-10px);
+}
+.select_coin .select1 ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+}
+.select_coin .select1 ul li {
+  padding: 5px 7px;
+  height: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: "Roboto";
+  transition: all 0.1s ease;
+}
+.select_coin .select1 ul li:hover {
+  background: #F8FAFD;
+  cursor: pointer;
+}
+.select_coin .select1 ul li img {
+  width: 30px;
+  height: 30px;
+}
+.select_coin .select1 ul li span {
+  color: gray;
+  font-size: 0.8rem;
+}
+.select_coin .select1 ul li svg {
+  color: blue;
+  width: 20px;
+  height: 20px;
+  margin-left: auto !important;
+}
+
+/*# sourceMappingURL=SelectCoin.module.css.map */

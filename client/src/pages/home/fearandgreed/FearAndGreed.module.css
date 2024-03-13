@@ -1,0 +1,108 @@
+.fear_item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 400px;
+  height: 280px !important;
+  box-sizing: border-box;
+  padding: 10px;
+  background-color: white;
+  border: 1px solid whitesmoke;
+  box-shadow: rgba(128, 138, 157, 0.04) 0px 8px 32px, rgba(128, 138, 157, 0.12) 0px 1px 2px;
+  transition: box-shadow 150ms ease-in 0s;
+}
+.fear_item .fear_block {
+  width: 150px;
+  height: 150px;
+}
+.fear_item .fear_block canvas {
+  width: 100%;
+}
+.fear_item .fear_item_title {
+  margin-bottom: 35px;
+  margin-left: 10px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  justify-content: flex-start !important;
+}
+.fear_item .fear_item_title h2 {
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: 1.5rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.fear_item .fear_item_title span {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  margin-left: auto !important;
+  padding-right: 5px;
+  font-size: 1rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: blue;
+  font-family: "Roboto";
+  font-weight: 400;
+}
+.fear_item .fear_block2 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  transform: translateY(-100px);
+}
+.fear_item .fear_block2 .fear_title {
+  color: rgb(34, 37, 49);
+  font-family: "Roboto";
+  font-size: 2rem;
+  font-weight: 800;
+}
+.fear_item .fear_block2 .fear_title2 {
+  color: rgb(34, 37, 49);
+  font-family: "Roboto";
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 940px) {
+  .fear_item {
+    width: 400px;
+    height: 200px;
+  }
+  .fear_item .fear_item_title h2 {
+    font-size: 1rem;
+  }
+  .fear_item .fear_item_title svg {
+    width: 18px !important;
+  }
+}
+@media screen and (max-width: 800px) {
+  .fear_item {
+    width: 340px !important;
+    height: 235px !important;
+  }
+  .fear_item .fear_item_title h2 {
+    font-size: 1rem;
+  }
+  .fear_item .fear_item_title svg {
+    width: 18px !important;
+  }
+}
+@media screen and (max-width: 540px) {
+  .fear_item {
+    width: 300px !important;
+    height: 230px !important;
+  }
+  .fear_item .fear_item_title h2 {
+    font-size: 1rem;
+  }
+  .fear_item .fear_item_title svg {
+    width: 18px !important;
+  }
+}
+
+/*# sourceMappingURL=FearAndGreed.module.css.map */

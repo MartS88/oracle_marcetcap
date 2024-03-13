@@ -1,0 +1,115 @@
+.cabinet {
+  margin: 0 auto;
+  min-height: 100vh;
+}
+.cabinet .title {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.cabinet .title h2 {
+  font-family: "Prompt";
+  font-weight: 400;
+  cursor: pointer;
+  font-size: 1.5rem;
+  line-height: 28px;
+  cursor: auto;
+}
+.cabinet .title span {
+  font-size: 1rem;
+  color: #58667e;
+}
+.cabinet .title .logout_button {
+  font-family: "Roboto";
+  font-size: 1rem;
+  padding: 7px;
+  border-radius: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: whitesmoke;
+  cursor: pointer;
+  transition: all 0.1s ease;
+  border: none;
+}
+.cabinet .title .logout_button:hover {
+  background: #e6f0ff;
+}
+.cabinet .account_block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+}
+.cabinet .account_block .error_title {
+  color: red;
+  font-size: 0.9rem;
+  font-family: "Roboto";
+}
+.cabinet .account_block .update_block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+.cabinet .account_block .update_block input {
+  width: 200px;
+  height: auto;
+  padding: 5px;
+  background: white;
+  border: 1px solid #113767;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: "Roboto";
+  position: relative;
+}
+.cabinet .account_block .update_block input::placeholder {
+  padding-left: 5px;
+  transition: all 0.5s ease;
+}
+.cabinet .account_block .update_block input:hover {
+  background: whitesmoke;
+  border: 1px solid #113767;
+}
+.cabinet .account_block .update_block input:focus {
+  outline: none;
+  background: white;
+  border: 1px solid #113767;
+}
+.cabinet .account_block .update_block input:focus::placeholder {
+  font-size: 0.72rem;
+  transform: translateY(-7px);
+}
+.cabinet .account_block .update_block .update_button {
+  width: auto;
+  font-family: "Roboto";
+  font-size: 1rem;
+  padding: 7px;
+  border-radius: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: whitesmoke;
+  cursor: pointer;
+  transition: all 0.1s ease;
+  border: none;
+}
+.cabinet .account_block .update_block .update_button:hover {
+  background: #e6f0ff;
+}
+.cabinet .account_block .update_block .error_title {
+  width: 100%;
+}
+.cabinet .updated {
+  background: #e6f0ff !important;
+  color: #113767 !important;
+}
+.cabinet .error {
+  background: #fc6f7f !important;
+  color: black !important;
+}
+
+/*# sourceMappingURL=Cabinet.module.css.map */

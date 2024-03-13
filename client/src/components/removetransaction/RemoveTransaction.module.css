@@ -1,0 +1,40 @@
+.remove_transaction {
+  margin: 0;
+  padding: 10px;
+  width: auto;
+  height: auto;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: flex-start;
+  background-color: whitesmoke;
+  box-shadow: silver 0px 1px 12px, silver 0px 1px 2px;
+  transition: box-shadow 150ms ease-in 0s;
+}
+.remove_transaction svg {
+  cursor: pointer;
+}
+.remove_transaction .close {
+  margin-left: auto;
+  transform: translateX(25%);
+}
+.remove_transaction .remove_transaction_div, .remove_transaction .remove_transaction_div2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+  cursor: pointer;
+}
+.remove_transaction .remove_transaction_div .remove_transaction_div_span, .remove_transaction .remove_transaction_div2 .remove_transaction_div_span {
+  font-size: 1rem;
+  color: black;
+  font-family: "Roboto";
+  font-weight: 500;
+  transition: all 0.1s ease;
+}
+.remove_transaction .remove_transaction_div .remove_transaction_div_span:hover, .remove_transaction .remove_transaction_div2 .remove_transaction_div_span:hover {
+  color: #494545;
+}
+
+/*# sourceMappingURL=RemoveTransaction.module.css.map */

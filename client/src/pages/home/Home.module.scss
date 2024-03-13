@@ -1,0 +1,171 @@
+.home {
+  min-height: 100vh;
+  padding: 0px ;
+  margin: 0 auto;
+  flex-direction: column;
+
+  .color_ring {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .content_block {
+
+    .title {
+      font-family: "Prompt";
+      font-weight: 400;
+      font-size: 1.5rem;
+      line-height: 28px;
+      cursor: auto;
+      margin-bottom: 10px;
+      color: rgb(34, 37, 49);
+
+      span {
+        color: gray;
+      }
+    }
+
+    p {
+      margin-bottom: 10px;
+      font-family: 'Roboto';
+      line-height: 1.5;
+      color:#58667e;
+      font-size: 1rem
+
+    }
+
+    .market_block {
+
+      display: flex;
+      width: 100%;
+      color:#58667e;
+      font-size: 1rem;
+      line-height: 21px;
+      font-family: 'Roboto';
+
+      .increase_decrease {
+        margin-right: 3px;
+        font-weight: 400!important;
+      }
+
+      .marketcap {
+        font-weight: 500;
+        margin-left: 3px;
+        color:#58667e;
+      }
+      span {
+        font-weight: 500;
+        margin-right: 3px;
+      }
+
+
+    }
+
+    .block {
+      padding-top: 10px;
+      margin-bottom: 50px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr;
+      gap: 0px 0px;
+
+    }
+
+  }
+  .down {
+    color:red;
+  }
+  .up {
+    color:green;
+  }
+}
+
+
+@media screen and (max-width: 1360px) {
+  .my_oracle_content {
+    .content_block {
+      .block {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr!important;
+        gap: 20px;
+        grid-template-rows:  1fr !important;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: center;
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 940px) {
+  .my_oracle_content {
+    .content_block {
+
+      h1 {
+        display: block;
+        font-size: 1.3rem!important;
+      }
+
+      .block {
+        gap: 10px!important;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .my_oracle_content {
+    padding-top: 20px!important;
+    .content_block {
+      margin-left: 30px!important;
+      h1 {
+
+      }
+
+      .block {
+        margin-bottom: 20px;
+        display: grid;
+        grid-template-columns: 1fr!important;
+        gap: 10px;
+        grid-template-rows:  1fr !important;
+        justify-content: center;
+
+
+      }
+      .market_block {
+        display: block;
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 550px) {
+  .my_oracle_content {
+    padding-top: 20px;
+
+    .content_block {
+
+
+      .title {
+        font-size: 0.9rem!important;
+      }
+      p {
+        margin-bottom: 10px;
+      }
+    }
+    .market_block {
+      font-size: 0.8rem!important;
+
+
+    }
+    .block {
+      padding-top: 0!important;
+    }
+  }
+}

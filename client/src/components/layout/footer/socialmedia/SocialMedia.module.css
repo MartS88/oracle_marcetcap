@@ -1,0 +1,100 @@
+.socialmedia {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 2px solid whitesmoke;
+  border-bottom: 2px solid whitesmoke;
+  padding: 0px 25px 0px 25px;
+}
+.socialmedia p {
+  font-family: "Roboto";
+  font-size: 1rem;
+  font-weight: 500;
+  color: #22293d;
+}
+.socialmedia ul {
+  margin-right: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+}
+.socialmedia ul:before {
+  font-family: "Roboto";
+  margin-right: 10px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #22293d;
+  content: "Find us on:";
+}
+.socialmedia ul li {
+  transition: all 0.3s ease;
+}
+.socialmedia ul li:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+@media (max-width: 1325px) {
+  .socialmedia img {
+    width: 120px !important;
+  }
+}
+@media (max-width: 1200px) {
+  .socialmedia p {
+    transform: translateX(30%);
+    font-size: 0.9rem;
+  }
+  .socialmedia ul:before {
+    font-size: 13px;
+  }
+}
+@media (max-width: 1105px) {
+  .socialmedia img {
+    width: 100px !important;
+  }
+}
+@media (max-width: 912px) {
+  .socialmedia p {
+    justify-content: center;
+    font-size: 50%;
+  }
+  .socialmedia ul {
+    gap: 10px;
+  }
+  .socialmedia ul li svg {
+    width: 18px !important;
+  }
+  .socialmedia ul:before {
+    transform: translateX(30%);
+    font-size: 0.7rem;
+    width: 80px;
+  }
+}
+@media (max-width: 700px) {
+  .socialmedia {
+    justify-content: flex-start;
+  }
+  .socialmedia img {
+    margin-left: 20px;
+  }
+  .socialmedia p {
+    display: none !important;
+  }
+  .socialmedia ul {
+    gap: 10px;
+  }
+  .socialmedia ul li svg {
+    width: 18px !important;
+  }
+  .socialmedia ul:before {
+    transform: translateX(30%);
+    font-size: 0.7rem;
+    width: 80px;
+  }
+}
+
+/*# sourceMappingURL=SocialMedia.module.css.map */

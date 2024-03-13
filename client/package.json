@@ -1,0 +1,80 @@
+{
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.0.1",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.5.2",
+    "@types/node": "^16.18.68",
+    "@types/react": "^18.2.45",
+    "@types/react-dom": "^18.2.18",
+    "@types/swiper": "^6.0.0",
+    "@types/uuid": "^9.0.7",
+    "chart.js": "^4.4.1",
+    "clipboard-copy": "^4.0.1",
+    "crypto-browserify": "^3.12.0",
+    "date-fns": "^3.1.0",
+    "glider-js": "^1.7.8",
+    "js-sha256": "^0.11.0",
+    "jsonwebtoken": "^9.0.2",
+    "react": "^18.2.0",
+    "react-chartjs-2": "^5.2.0",
+    "react-datepicker": "^4.25.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.12.0",
+    "react-loader-spinner": "^6.1.6",
+    "react-redux": "^9.0.4",
+    "react-responsive": "^9.0.2",
+    "react-router-dom": "^6.21.1",
+    "react-scripts": "5.0.1",
+    "react-select": "^5.8.0",
+    "react-transition-group": "^4.4.5",
+    "redux": "^5.0.0",
+    "sha256": "^0.2.0",
+    "stream-browserify": "^3.0.0",
+    "swiper": "^11.0.5",
+    "util": "^0.12.5",
+    "uuid": "^9.0.1",
+    "uuidv4": "^6.2.13",
+    "web-vitals": "^2.1.4",
+    "web3": "^4.5.0",
+    "webpack": "^5.89.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@types/date-fns": "^2.6.0",
+    "@types/glider-js": "^1.7.11",
+    "@types/jsonwebtoken": "^9.0.5",
+    "@types/react-datepicker": "^4.19.5",
+    "@types/react-transition-group": "^4.4.10",
+    "@types/sha256": "^0.2.2",
+    "typescript": "^5.3.3"
+  }
+}

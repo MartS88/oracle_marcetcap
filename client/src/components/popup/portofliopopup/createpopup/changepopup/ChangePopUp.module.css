@@ -1,0 +1,78 @@
+.change_popup {
+  width: 400px;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: whitesmoke;
+  padding: 10px 13px;
+  box-shadow: silver 0px 1px 12px, silver 0px 1px 2px;
+  transition: box-shadow 150ms ease-in 0s;
+}
+.change_popup .block {
+  margin-bottom: 20px;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 120px;
+}
+.change_popup .block svg {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+}
+.change_popup .block .block_logo svg {
+  width: 60px;
+  height: 60px;
+  cursor: none !important;
+}
+.change_popup .svg_block {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.change_popup .svg_block label {
+  color: gray;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+.change_popup .svg_block .svg_list {
+  padding: 16px 15px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15px;
+}
+.change_popup .svg_block .svg_list svg {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.change_popup .svg_block .svg_list svg:hover {
+  transform: scale(1.1);
+}
+.change_popup button {
+  margin-bottom: 10px;
+  background: rgb(56, 97, 251);
+  border-radius: 5px;
+  width: 100%;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  padding: 5px 5px;
+  color: rgb(255, 255, 255);
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 0.9rem;
+  border: none;
+}
+.change_popup button:hover {
+  background: rgb(56, 134, 251);
+}
+
+@media (max-width: 700px) {
+  .change_popup {
+    width: 350px;
+  }
+}
+
+/*# sourceMappingURL=ChangePopUp.module.css.map */

@@ -1,0 +1,138 @@
+form {
+  width: 600px;
+  height: auto;
+  padding: 50px;
+  background: #d4e4f7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+form h3 {
+  width: 100%;
+  margin-bottom: 10px;
+  font-family: "Prompt";
+  font-size: 1.5rem;
+  line-height: 28px;
+  font-weight: 500;
+  color: #113767;
+  text-align: center;
+}
+form .inputs_block {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+form .inputs_block .email_button, form .inputs_block .open_eye {
+  cursor: pointer;
+  position: relative;
+}
+form .inputs_block .email_block, form .inputs_block .password_block {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+}
+form .inputs_block .email_block label, form .inputs_block .password_block label {
+  font-size: 0.8rem;
+  font-family: "Prompt";
+}
+form .inputs_block .email_block .block_input, form .inputs_block .password_block .block_input {
+  width: 90%;
+  height: auto;
+  padding: 10px;
+  background: white;
+  border: 1px solid #113767;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: "Roboto";
+  position: relative;
+}
+form .inputs_block .email_block .block_input::placeholder, form .inputs_block .password_block .block_input::placeholder {
+  padding-left: 5px;
+  transition: all 0.5s ease;
+}
+form .inputs_block .email_block .block_input:hover, form .inputs_block .password_block .block_input:hover {
+  background: whitesmoke;
+  border: 1px solid #113767;
+}
+form .inputs_block .email_block .block_input:focus, form .inputs_block .password_block .block_input:focus {
+  outline: none;
+  background: white;
+  border: 1px solid #113767;
+}
+form .inputs_block .email_block .block_input:focus::placeholder, form .inputs_block .password_block .block_input:focus::placeholder {
+  font-size: 0.72rem;
+  transform: translateY(-10px);
+}
+form .inputs_block .email_input_block, form .inputs_block .password_input_block {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+}
+form .inputs_block .submit_button {
+  width: 100%;
+  padding: 16px;
+  border: 1px solid #113767;
+  border-radius: 4px;
+  background: #fff;
+  color: #002f6c;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 24px;
+  cursor: pointer;
+  transition: all 1s ease;
+}
+form .inputs_block .submit_button:hover {
+  background: #80b5ef;
+  border: 0.2px solid #002f6c;
+}
+form .inputs_block .submit_button.button_disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+}
+form p {
+  margin-bottom: 10px;
+  width: 100%;
+  font-size: 1rem;
+  line-height: 22px;
+  color: #002f6c;
+  cursor: inherit;
+}
+form p:hover {
+  text-decoration: none;
+}
+
+.active {
+  visibility: inherit;
+}
+
+.error {
+  color: red;
+  font-size: 0.9rem;
+  display: flex;
+  align-self: start;
+  left: 5px;
+  position: relative;
+  transform: scale(0%);
+}
+
+.error.visible {
+  transform: scale(100%);
+}
+
+.error_input {
+  border: 1px solid red;
+}
+
+/*# sourceMappingURL=LoginFrom.module.css.map */

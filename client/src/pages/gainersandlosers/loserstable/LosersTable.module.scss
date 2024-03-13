@@ -1,0 +1,169 @@
+.tableContainer {
+  overflow-x: auto;
+
+
+  .select_block {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    span {
+      color: black;
+      font-family: 'Roboto';
+      font-weight: 500;
+    }
+
+    select {
+      font-weight: 400;
+      margin-bottom: 2px;
+    }
+  }
+  label {
+    font-family: "Roboto";
+
+  }
+
+
+  .table {
+    width: 100%;
+    max-width: 1400px!important;
+    border-collapse: collapse;
+    border-top: 2px solid whitesmoke;
+    margin-bottom: 100px;
+
+
+
+    tbody {
+      tr {
+        transition: all 0.3s ease;
+        &:hover {
+          background:#e6f0ff;
+        }
+      }
+    }
+
+    .coinLink {
+
+      display: flex;
+      align-items: center;
+      width: 165px;
+      margin-right: 15px;
+    }
+
+    .coinLink img {
+      width: 20px;
+      max-width: 100%;
+      margin-right: 8px;
+    }
+
+  }
+  .headerCell {
+
+
+    font-family: 'Roboto';
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 8px;
+    text-align: left;
+    white-space: nowrap;
+    vertical-align: middle;
+
+
+    .headerCellWithFlex {
+      display: flex;
+      align-items: center;
+    }
+
+    .headerFlex {
+      height: 25px;
+      display: flex;
+      align-items: center;
+
+      span:hover {
+        cursor: pointer;
+      }
+    }
+    .sortIcon {
+      width: 20px;
+      font-size: 16px;
+      color: black;
+    }
+
+
+    .headerCellWithFlex.active .sortIcon {
+      color: #007bff;
+    }
+  }
+  .hovered_coin {
+    position: absolute;
+    transform: translate(-32%,140%);
+    padding: 5px 5px;
+    background: black;
+    color:white;
+    font-family: 'Roboto';
+    font-size: 0.9rem;
+    border-radius: 15px;
+
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: -39%;
+      left: 20.5%;
+      border-width: 0 10px 10px;
+      border-style: solid;
+      border-color: transparent transparent black;
+    }
+  }
+  .dataCell {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 220px;
+    height: 70px;
+    padding: 8px;
+    text-align: left;
+    vertical-align: middle;
+    font-size: 1rem;
+    font-weight: 500;
+    border-top: 2px solid whitesmoke;
+    border-bottom: 2px solid whitesmoke;
+    font-family: 'Roboto';
+  }
+  .symbol {
+    margin-left: 5px;
+    color: gray;
+    font-weight: 400;
+  }
+  .positive {
+    color: green!important;
+  }
+
+  .negative {
+    color: red!important;
+  }
+}
+
+@media (max-width: 768px) {
+  .headerCell,
+  .dataCell {
+    padding: 6px;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+
+}
+
+
+
+@media screen and (max-width: 1100px) {
+  .tableContainer .headerCell:nth-child(8),
+  .tableContainer .headerCell:nth-child(9),
+  .tableContainer .dataCell:nth-child(8),
+  .tableContainer .dataCell:nth-child(9) {
+    display: none;
+  }
+}

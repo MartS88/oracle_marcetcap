@@ -1,0 +1,54 @@
+.gainers_and_losers {
+  min-height: 100vh;
+  padding: 0px;
+  margin: 0 auto;
+}
+.gainers_and_losers .title {
+  display: flex;
+  gap: 5px;
+  align-items: flex-end;
+}
+.gainers_and_losers .title h2 {
+  font-family: "Prompt";
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 28px;
+  cursor: auto;
+  color: rgb(34, 37, 49);
+}
+.gainers_and_losers p {
+  padding-top: 10px;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  font-family: "Roboto";
+  color: #58667e;
+}
+.gainers_and_losers p span {
+  margin-left: 2px;
+  margin-right: 2px;
+  font-weight: 500;
+}
+.gainers_and_losers .losers_block {
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 700px) {
+  .gainers_and_losers {
+    margin-left: 20px;
+    min-height: 100vh;
+  }
+  .gainers_and_losers .title {
+    padding-top: 20px;
+    align-items: stretch;
+  }
+  .gainers_and_losers h2 {
+    font-size: 1rem !important;
+  }
+  .gainers_and_losers p {
+    padding: 5px 5px;
+    font-size: 0.8rem;
+    margin-bottom: 20px;
+  }
+}
+
+/*# sourceMappingURL=GainersAndLosers.module.css.map */

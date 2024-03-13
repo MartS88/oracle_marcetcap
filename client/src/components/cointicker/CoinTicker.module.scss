@@ -1,0 +1,122 @@
+.cointicker {
+  position: relative;
+  width: 100%;
+  top: 0px;
+  left: 0;
+  right: 0;
+  font-family: "Roboto", sans-serif;
+  box-shadow: 0 4px 8px -4px #e6f0ff;
+  background:#e6f0ff;
+  box-sizing: border-box;
+  overflow: hidden!important;
+  transform: translateY(0%);
+
+  ul li:last-child::after {
+
+    display: none;
+
+  }
+  .title {
+
+    height: 100%;
+    position: absolute;
+    background: #df2020;
+    display: flex;
+    align-items: center;
+    padding: 0 24px;
+    color: white;
+    font-weight: bold;
+
+
+  }
+  ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    transition: all ease;
+    animation: scroll 80s infinite linear;
+    &:hover {
+      animation-play-state: paused;
+    }
+
+    li {
+
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      gap: 10px;
+      height: 100%;
+      width: 100%!important;
+      white-space: nowrap;
+      padding: 10px 30px;
+      font-size: 1rem;
+      font-weight: 400;
+      color: #13264f;
+      position: relative;
+      cursor: pointer;
+      transition: all .2s ease;
+
+
+      &:after {
+        font-family: 'Roboto';
+        font-size: 0.9rem!important;
+        content:"|"!important;
+        position: absolute!important;
+        top: 20px!important;
+        left: 10px!important;
+
+
+      }
+
+      &:hover {
+
+        img {
+
+        }
+      }
+      .item_block {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+
+
+        .name {
+          font-family: 'Roboto';
+          font-weight: 500;
+          color: black;
+          font-size: 0.9rem;
+        }
+        .symbol {
+          font-weight: 400;
+          color: black;
+          font-size: 0.8rem;
+          color:gray;
+        }
+
+      }
+      .price {
+        font-family: 'Roboto';
+        font-size: 0.8rem;
+        color: black;
+        font-weight: 500;
+
+      }
+    }
+  }
+
+  @keyframes scroll {
+    from {
+      transform: translateX(2%);
+    }
+
+    to {
+      transform: translateX(-5700px);
+    }
+  }
+}
+
+
+
+
+
