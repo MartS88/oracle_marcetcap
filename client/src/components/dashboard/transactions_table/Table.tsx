@@ -18,33 +18,12 @@ import axios from 'axios';
 
 const Table = ({ transactions, item }: { transactions: any; item: any }) => {
   const selector = useSelector(selectPortfolio);
-
+  const dispatch = useDispatch()
   const isMobile = useMediaQuery({ maxWidth: 1180 });
   const maxChars = isMobile ? 6 : 15;
   const transactionsArr = transactions.filter((coin: any) => coin.coin === selector.transactionName);
   const [removeTransactionFlag, setRemoveTransactionFlag] = useState<boolean>(false);
-  //
-  // const dispatch = useDispatch();
-  // const addTransactionHandler = () => {
-  //   dispatch(setAddTransactionMode(false));
-  //   dispatch(setRemoveMode(false));
-  //   dispatch(setEditPortfolioMode(false));
-  //   dispatch(setCreatePortfolioMode(false));
-  //   dispatch(setTransactionsMode(false));
-  //   dispatch(setTransactionName(null));
-  //   dispatch(setSelectCoinMode(true));
-  // };
-  // const [hoverTransactionId, setHoverTransactionId] = useState<string>('');
 
-  // const transactionHandler = (transaction: Transactions) => {
-  //   if (hoverTransactionId.length === 0 && !removeTransactionFlag) {
-  //     setHoverTransactionId(transaction?.id);
-  //     setRemoveTransactionFlag(true);
-  //   } else {
-  //     setHoverTransactionId('');
-  //     setRemoveTransactionFlag(false);
-  //   }
-  // };
   const [id, setId] = useState<string>('');
   const closeHandler = (id: '') => {
     setId('');
@@ -70,6 +49,7 @@ const Table = ({ transactions, item }: { transactions: any; item: any }) => {
           transactionData,
         );
         setRemoveTransactionFlag(!removeTransactionFlag);
+
         return response;
       }
     } catch (error) {

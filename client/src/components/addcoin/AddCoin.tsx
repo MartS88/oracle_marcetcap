@@ -12,7 +12,6 @@ import {
 } from '../../store/slice/watchListSlice';
 import { Coin } from '../../types/cryptocurrencies';
 import { localStorageService } from '../../service/localStorageService';
-import { useHoveredCoinState, useLoadingState, usePopupState } from '../../constants/stateConstants';
 import axios from 'axios';
 
 const AddCoin = ({
@@ -24,6 +23,8 @@ const AddCoin = ({
   setShowAddCoinsBlock: Dispatch<SetStateAction<boolean>>;
   currentList: Coin[];
 }) => {
+
+
   const dispatch = useDispatch();
   const selector = useSelector(selectWatchlist);
   const closeHandler = () => {
@@ -47,11 +48,8 @@ const AddCoin = ({
     });
     setSearchResults(results?.slice(0, 6) || []);
   };
-
-  const { dataIsLoading, setDataIsLoading } = useLoadingState();
-  const { popupIsActive, setPopupIsActive } = usePopupState();
-  const { hoveredCoinId, setHoveredCoinId } = useHoveredCoinState();
   const [buttonIsDisabled, setButtonIsDisabled] = useState<boolean>(false);
+
 
   const addToWatchListAction = (coin: any) => {
     if (isCoinInWatchList(coin)) {
@@ -72,7 +70,8 @@ const AddCoin = ({
       setButtonIsDisabled(false);
     }
   }, [selector?.watchListArr]);
-  useEffect(() => {}, [selector?.watchListArr]);
+  useEffect(() => {
+  }, [selector?.watchListArr,]);
 
   const submitHandler = async (coin: any) => {
     try {

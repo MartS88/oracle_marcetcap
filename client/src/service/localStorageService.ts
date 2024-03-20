@@ -10,6 +10,6 @@ export const localStorageService = {
   },
 
   clearCredentials: () => {
-    localStorage.removeItem('credentials');
+    localStorage.clear();
   },
 };

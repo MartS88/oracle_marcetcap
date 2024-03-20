@@ -71,7 +71,7 @@ const WatchListContent = () => {
             </div>
           ) : (
             <>
-              {selectorAuth?.authenticated && localStorage.length > 0 ? (
+              {selectorAuth?.authenticated && localStorage.token  ? (
                 <>
                   {watchListData?.length > 0 && selector.watchListMode !== true ? (
                     <div className={s.my_watchlist}>

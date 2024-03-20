@@ -15,7 +15,7 @@ const BlockchainExplorer: React.FC = () => {
     <Layout>
       <div className="wrapper">
         <div className={s.blockchain_explorer}>
-          {selector.authenticated && localStorage.length > 0 ? (
+          {selector.authenticated && localStorage.token  ? (
             <>
               <h3 className={s.blockchain_title}>Check wallet balance:</h3>
               <MySelect />

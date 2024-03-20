@@ -14,10 +14,12 @@ const Portfolio = () => {
   const navigate = useNavigate();
   const selector = useSelector(selectAuth);
 
+    console.log('localStorage.length', localStorage)
   return (
     <Layout>
       <div className="wrapper">
-        {selector.authenticated && localStorage.length > 0 ? (
+
+        {selector.authenticated && localStorage.token  ? (
           <div className={s.portfolio}>
             <div className={s.title_block}>
               <h3 className={s.title} onClick={() => navigate('/')}>

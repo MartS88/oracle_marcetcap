@@ -49,7 +49,7 @@ const DashBoardStats = ({ item, coinsData }: { item: any; coinsData: Coin[] }) =
     dispatch(setTransactionsMode(false));
     dispatch(setTransactionName(null));
   };
-  // console.log('transactions', transactions);
+
   function calculateRemainingCoins(transactions: Transactions[]) {
     const totalCoins: { [coin: string]: { quantity: number; totalSpent: number | any; transactionType: string } } = {};
 
@@ -79,7 +79,7 @@ const DashBoardStats = ({ item, coinsData }: { item: any; coinsData: Coin[] }) =
   }
 
   useEffect(() => {
-    console.log('portfolioItem', calculateRemainingCoins(portfolioItem));
+
   }, [calculateRemainingCoins, portfolioItem]);
   return (
     <div className={s.dashboard_stats}>
@@ -87,7 +87,7 @@ const DashBoardStats = ({ item, coinsData }: { item: any; coinsData: Coin[] }) =
         <>
           <div className={s.dashboard_block}>
             <span className={s.balance}>Current balance</span>
-            {/*<span> $ {calculateRemainingCoins(portfolioItem)}</span>*/}
+
           </div>
           <div className={s.dashboard_block2}>
             {selector?.transactionsMode ? (
