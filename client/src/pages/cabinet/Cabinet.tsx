@@ -8,8 +8,7 @@ import AccountUpdatePopUp from '../../components/popup/accountupdatepopup/Accoun
 import { setAuthenticated } from '../../store/authSlice';
 import { selectWatchlist } from '../../store/slice/watchListSlice';
 import { localStorageService } from '../../service/localStorageService';
-import { Web3 } from 'web3';
-import { sha256 } from 'js-sha256';
+
 
 const Cabinet = () => {
   const dispatch = useDispatch();
@@ -22,46 +21,8 @@ const Cabinet = () => {
   const [accountUpdatePopup, setAccountUpdatePopup] = useState<boolean>(false);
   const [message, setMessage] = useState<string>('');
 
-  const address = '0x8553259Cd076d2374E50B103f53F2e771E17366b';
-  const privateKey = '0x793b45c70588f1a724213880e42b61641d27ef5e872c04ea26879041c21636ad';
 
-  const toAddress = '0x9737cf4f29B1B05241e6C6865d98950871ce1f76';
-  const transaction = '0xc7ebfc701c612e74f412cfe99e54ac929fd880cedafad8d437e60848c8685c3f';
 
-  const infuraResponse = async () => {
-    try {
-      const provider = 'https://bsc-dataseed1.binance.org';
-      // const provider = 'https://polygon-mainnet.infura.io/v3/9086527a5b44445aba865fdc391406a8';
-      const web3 = new Web3(provider);
-      const value = web3.utils.toWei('0.1', 'ether');
-      const seedPhrase = web3.eth.accounts.privateKeyToAccount(privateKey);
-      console.log('seedPrhase', seedPhrase);
-      const gas = await web3.eth.estimateGas({
-        to: toAddress,
-        value: value,
-      });
-
-      const tx = {
-        from: address,
-        to: toAddress,
-        value: value,
-        gas: gas,
-      };
-
-      const signedTx = await web3.eth.accounts.signTransaction(tx, privateKey);
-      const receipt = await web3.eth.sendSignedTransaction(signedTx.rawTransaction);
-      console.log('Transaction receipt:', receipt);
-
-      // const latestBlockNumber = await web3.eth.getBlockNumber();
-      // const transactionCount = await web3.eth.getTransactionCount(address);
-      // const newAccount = web3.eth.accounts.create();
-      // console.log('Новый аккаунт создан:', newAccount);
-      // console.log('Адрес:', newAccount.address);
-      // console.log('Приватный ключ:', newAccount.privateKey);
-    } catch (error) {
-      console.error('Error:', error);
-    }
-  };
   const logOutHandler = async () => {
     try {
       const watchListData = selector.watchListArr.map((coin: any) => ({
@@ -195,7 +156,7 @@ const Cabinet = () => {
       {accountUpdatePopup && <AccountUpdatePopUp message={message} />}
       <div className={s.cabinet}>
         <div className={s.title}>
-          <h2 onClick={infuraResponse}>Account settings</h2>
+          <h2>Account settings</h2>
 
           <span onClick={logOutHandler} className={s.logout_button}>
             Log out
